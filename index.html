@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Rudra S</title>
+    <link href="{{mainCSS}}" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Raleway:100&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Nunito:600&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/da711350bb.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css">
+</head>
+<body>
+<script></script>
+<div class="navbar">
+            <nav>
+                <ul>
+                    <li><a href="/#title">Home</a></li>
+                    <li><a href="/#allAboutMe">About</a></li>
+                    <li><a href="/#contacts">Contacts</a></li>
+                    <li><a href="/admin">Admin</a></li>
+                </ul>
+            </nav>
+<script>
+                $(document).ready(function {
+                    var width = $(window).width();
+                    $('nav').css({'width': width + 'px'});
+                    $('nav.black').css({'width': width + 'px'});
+                    $('section').css({'width': width + 'px'});
+                })
+            </script>
+        </div>
+        <script>
+            $(window).on('scroll', function() {
+                if ($(window).scrollTop()) {
+                    $('nav').addClass('black');
+                    $('nav a').addClass('white');
+                }
+                else {
+                    $('nav').removeClass('black');
+                    $('nav a').removeClass('white');
+                }
+            })
+        </script>
+<div class="title" style="background-image:url({{background}});">
+    <h1>Meet Rudra</h1>
+    <a id="learn-more" href="/#allAboutMe"><i class="fas fa-chevron-down"></i></a>
+</div>
+<div id="allAboutMe" style="background-color:#fff;">
+     <h1 style="padding-top:3%;">
+         Who is Rudra?
+     </h1>
+    <h2 style="padding-top:1%; padding-bottom:3%;">His Hobbies</h2>
+    <div style="padding-bottom:3%;">
+        <table>
+            <tr>
+                <td style="" class="text-cell">
+                    <p>
+                        Science, Technology, Mathematics and Engineering are all linked together is a fundamental way.
+                        The field of STEM is becoming more and more of a necessity rather than an accessory.
+                        We are making new discoveries in science, which are explained using complex mathematics.
+                        Technology is used to prove those theories, and with those theories comes appliable
+                        appliances. Engineering is used to design and eventually build these structures, which can be later
+                        used in this loop or somewhere completely different.
+                    </p>
+                </td>
+                <td>
+                    <div class="divWithImage">
+                        <img src="{{electronic}}">
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <h2 style="padding-top:3%;">Astrophysics</h2>
+    <div style="padding-top:1%; padding-bottom:5%;">
+        <table>
+            <tr>
+                <td class="text-cell">
+                    <p>
+                        Our understanding of the universe has grown exponentially over the last few centuries. In
+                        the ancient times, we never believed in science and instead believed in myths, the most
+                        famous ones from Greece. Then, philosophy emerged and the first scientists began asking
+                        scientific questions. Plotemy came up with the idea that Earth is at the centre of the universe.
+                        At first, this seemed like the logical answer, however, as more and more accurate measurements
+                        contradicted the model, the planetary model took over. Copernicus, Galileo and Kepler
+                        showed that the Earth is not at te centre, but instead the Sun is. Isaac Newton revolutionised
+                        how we think about gravity. However, small errors emerged in the theory of gravity and
+                        so Einstein's Theories of Relativity restored those errors back to 0. It also predicted the
+                        beginning of the universe, which we call the Big Bang. Quantum Mechanics explains the behaviour of particles
+                        on the atomic level. Now we are at a stage where we need to create a theory of everything which
+                        unifies both Quantum Mechanics and General Relativity. This is a very hard thing to do but there
+                        has been progress.
+                    </p>
+                </td>
+                <td>
+                    <div class="divWithImage">
+                        <img src="{{space}}" style="width:75%;">
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <h2 style="padding-top:5%;">The Environment</h2>
+    <div>
+        <table>
+            <tr>
+                <td>
+                    <p>
+                        The Earth was formed from a protoplanetary disk 4.5 billion years ago. It was a toxic world,
+                        but all of that was going to change. Around 4.4 billion years, a frozen world, around the size of Mars,
+                        collided with the Earth causing it to obliterate into pieces. But then a new planet emerged,
+                        our Earth, and as it cooled, it had the conditions to start life. Now the Earth is teeming with
+                        life and it has transformed the face the Earth. However, around 2 million years ago, a
+                        new, intelligent species emerged. This species would later build architecture and start the chain
+                        reaction to extinction. And it's still happening to this day. That species is the <i>homo sapiens</i>.
+                        <br>
+                        Mankind is currently causing an extinction event that will eventually kill all species on Earth, including a large amount of us, homosapiens . This is because of us hunting down and killing animals just because of their
+                        resources. Moreover, marine fishing and deforestation are destroying not only the animals,
+                        but the environment around it.
+                        <br>
+                        We need to do something about our planet, because so far this is our only home.
+                        We need to take extra care of our planet and we want to make our planet the best
+                        planet.
+                    </p>
+                </td>
+                <td style="width:40%;">
+                    <div class="divWithImage">
+                        <img style="width:65s%;" src="{{environment}}">
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <h1 style="padding-top:5%; text-align:center;">Who am I?</h1>
+    <p style="padding-top:1%; text-align:center;">I am a student who believes that every student should be able to answer
+    their questions about science, technology, engineering and mathematics.
+    I believe that the world can be changed by this generation, and generations
+        to come.</p>
+    <br>
+    <p style="padding-top:1%; text-align:center;"> The world needs our help. It is us that decide the future.</p>
+    <h2 style="padding-top:3%;">How am I changing the World</h2>
+    <p style="padding-top:1%; text-align:center;">I and many other students with similar ambitions are working alongside our local
+    council to change the future and make our urban environment more sustainable.
+    We are conducting several sustainability projects across our neighbourhood,
+    encouraging kids and adults to join us along. These projects include -
+    </p>
+    <ul style="list-style: circle inside;">
+        <li>Using GPS trackers to monitor and save kangaroos</li>
+        <li>Encouraging kids to walk to school by following a robot</li>
+        <li>Monitoring the water quality in the Plenty River to save various wildlife species</li>
+        <li>Monitoring how efficiently we are using rainwater</li>
+    </ul>
+    <p style="padding-top:1%; text-align:center;">You can check the website out <a href="https://mplsustainabilitysystems.herokuapp.com" style="text-decoration:none;">here</a>.</p>
+</div>
+<div style="padding-top:3%; padding-bottom:2%;" id="contacts">
+    <h1 style="">Contacts</h1>
+    <p style="padding-top:1%; text-align:center;">Contact me if you have any more questions about me. Moreover, you
+    can see my other projects on GitHub. Change the world by starting your
+    very own STEM projects in your community. Who knows? Give it a shot.
+    Change the world.</p>
+    <table style="width:20%; margin-left:40%; padding-top:3%;">
+        <tr>
+            <td>
+                <a href="https://github.com/rudrathegreat"><i class="fab fa-github" style="font-size:75px; padding:10%; color:#000;"></i></a>
+            </td>
+            <td>
+                <a href="https://www.youtube.com/channel/UCveVEtr_xcXDSadWOkqPaKA?"><i class="fab fa-youtube" style="font-size:75px; padding:10%; color:#000;"></i></a>
+            </td>
+            <td>
+                <a href="mailto:rudratheastronaut@gmail.com"><i class="fas fa-envelope" style="font-size:75px; padding:10%; color:#000;"></i></a>
+            </td>
+        </tr>
+    </table>
+</div>
+<div class="title" style="background-image:url({{stars}});">
+    <h1>Make a Change Today</h1>
+</div>
+<div class="footer" style="background:#000;">
+    <table style="width:60%; margin-left:20%;">
+        <tr>
+            <td><p style="color:#fff; font-size:1.5em;">Copyright &copy; All Rights Reserved. Rudra S</p></td>
+            <td>
+                <a href="https://github.com/rudrathegreat"><i class="fab fa-github" style="font-size:50px; padding-right:5%; color:#fff;"></i></a>
+            </td>
+            <td>
+                <a href="https://www.youtube.com/channel/UCveVEtr_xcXDSadWOkqPaKA?"><i class="fab fa-youtube" style="font-size:50px; padding-right:5%; color:#fff;"></i></a>
+            </td>
+            <td>
+                <a href="mailto:rudratheastronaut@gmail.com"><i class="fas fa-envelope" style="font-size:50px; padding-right:5%; color:#fff;"></i></a>
+            </td>
+        </tr>
+    </table>
+</div>
+</body>
+</html>
