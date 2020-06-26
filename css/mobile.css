@@ -1,0 +1,133 @@
+@media screen and (max-width: 750px) {
+    #mobile {
+        display:block;
+    }
+
+    #laptop {
+        display:none;
+    }
+
+    .about h2 {
+        font-size:4vw;
+    }
+
+    .projects h2 {
+        font-size:5vw;
+        padding-top:20vh;
+    }
+
+    #mobile-projects {
+        display:block;
+    }
+
+    #laptop-projects {
+        display:none;
+    }
+
+    nav ul {
+        padding-left:calc(5px + 5vw);
+    }
+
+    nav ul li {
+        font-size:2.5vw;
+    }
+
+    ::-webkit-scrollbar {
+        width:0px;
+    }
+
+    .contacts h2 {
+        font-size:5vw;
+    }
+
+    .contacts ul li {
+        font-size:4vw;
+        border:3px solid #fff;
+        border-radius:2vh;
+        padding:3vh 5vw;
+    }
+
+    .contacts table {
+        transform:translate(-10vw, -65vh);
+    }
+
+    .name:hover {
+        color:#DCC72C;
+        transition: all 0.3s ease-in-out;
+    }
+    .footer h2 {
+        font-size:4vw;
+        width:100%;
+
+    }
+    .circle-big {
+        width:30vh;
+        height:30vh;
+        background:rgba(0,0,0,0.75);
+        position:absolute;
+        top:55%;
+        left:75%;
+        transform:translate(-65%, -75%);
+        visibility:hidden;
+        opacity:0;
+        animation:circleBigMobile 1s 6.25s 1 forwards;
+    }
+
+    .circle-medium {
+        display:block;
+        visibility:hidden;
+        opacity:0;
+        top:25%;
+        animation:circleMedium 1s 6.75s 1 forwards;
+    }
+
+    .circle-small {
+        display:block;
+        visibility:hidden;
+        opacity:0;
+        top:90%;
+        animation:circleSmall 1s 7s 1 forwards;
+    }
+}
+
+@keyframes circleBigMobile {
+    from {
+        top:55%;
+        opacity:0;
+        visibility:hidden;
+    }
+
+    to {
+        top:65%;
+        opacity:1;
+        visibility:visible;
+    }
+}
+
+@keyframes circleMedium {
+    from {
+        top:25%;
+        opacity:0;
+        visibility:hidden;
+    }
+
+    to {
+        top:35%;
+        opacity:1;
+        visibility:visible;
+    }
+}
+
+@keyframes circleSmall {
+    from {
+        top:90%;
+        opacity:0;
+        visibility:hidden;
+    }
+
+    to {
+        top:80%;
+        opacity:1;
+        visibility:visible;
+    }
+}

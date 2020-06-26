@@ -1,0 +1,128 @@
+* {
+    margin:0;
+    padding:0;
+}
+
+html {
+    scroll-behavior:smooth;
+}
+
+html {
+    visibility:visible;
+    overflow-y:hidden;
+    animation: scrollbar 1s ease-in-out 5s 1 normal forwards;
+}
+
+.loading {
+    visibility:visible;
+    display:block;
+    animation: fadeOut 1s ease-in-out 5s 1 normal forwards;
+}
+
+.loading img {
+    visibility:hidden;
+    animation: fadeIn 1s ease-in-out 0s 1 normal forwards;
+}
+
+.table-container {
+    margin-top:10vh;
+    opacity:0;
+    visibility:hidden;
+    animation:scrollIn 1.5s 6.5s 1 forwards;
+}
+
+.circle-big {
+    visibility:none;
+    opacity:0;
+    top:20%;
+    animation: circleBig 1s 6.25s 1 forwards;
+}
+
+nav ul li {
+    visibility:hidden;
+    padding-top:0vh;
+    opacity:0;
+    animation:scrollDown 1s 6s 1 forwards;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity:0;
+        color:#000;
+        visibility:visible;
+    }
+    100% {
+        opacity:1;
+        color:#fff;
+        visibility:visible;
+
+    }
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity:1;
+        color:#000;
+        visibility:visible;
+    }
+    100% {
+        opacity:0;
+        color:#fff;
+        visibility:hidden;
+        display:none;
+
+    }
+}
+
+@keyframes scrollbar {
+    0% {
+        overflow-y:hidden;
+    }
+
+    100% {
+        overflow-y:scroll;
+        overflow-x:hidden;
+    }
+}
+
+@keyframes scrollIn {
+    from {
+        margin-top:10vh;
+        opacity:0;
+        visibility:hidden;
+    }
+
+    to {
+        margin-top:0vh;
+        opacity:1;
+        visibility:visible;
+    }
+}
+
+@keyframes scrollDown {
+    from {
+        padding-top:0vh;
+        opacity:0;
+        visibility:hidden;
+    }
+
+    to {
+        padding-top:6vh;
+        opacity:1;
+        visibility:visible;
+    }
+}
+
+@keyframes circleBig {
+    from {
+        top:30%;
+        opacity:0;
+        visibility:hidden;
+    }
+
+    to {
+        top:40%;
+        opacity:1;
+        visibility:visible;
+    }
+}
