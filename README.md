@@ -1,3 +1,1 @@
-# Rudra
-
-This is me and this is a test!
+# My Personal Website
